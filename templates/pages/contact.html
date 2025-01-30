@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact Me {% endblock %}
+
+{% block content %}
+<div class="contact-section center-column">
+
+    <h1>Contact Me</h1>
+    <h2>Use the form below to say Hi!</h2>
+
+    <form action="." method="post" class="center-column">
+        {% csrf_token %}
+        <input class="form-field" placeholder="Your name" type="text" name="name">
+        <input class="form-field" placeholder="Your email" type="email" name="email">
+        <textarea class="form-field" placeholder="Your message to us" rows="3" name="message"></textarea>
+
+        <button type="submit">Send message</button>
+
+    </form>
+
+</div>
+{% endblock %}
