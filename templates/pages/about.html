@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %} About Me {% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<section class="about-section center-row">
+
+    <div class="about-image-container center-row">
+        <img src="{% static './img/Fun Website Design.jpeg' %}" alt="">
+    </div>
+
+    <div class="about-description-container center-column">
+        <h1>My role as developer</h1>
+        <h2>Dennis Casiguran</h2>
+
+        <p>I specialize in creating dynamic, user-friendly websites and applications that combine clean design with robust functionality. I have a strong foundation in front-end and back-end development, leveraging technologies such as HTML, CSS, JavaScript, and frameworks like React to build engaging user interfaces. On the back end, I work with languages like Python, PHP, or Node.js to ensure seamless integration and performance. My focus is on delivering responsive, scalable, and secure solutions tailored to meet client needs. With a problem-solving mindset and a commitment to staying current with emerging trends, I thrive in transforming ideas into digital experiences that drive results.
+    </p>
+
+    
+    <div class="skill-container center-column">
+        <h2>Skills</h2>
+
+        <div class="skill-list center-row">
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+
+{% endblock content %}
